@@ -39,4 +39,4 @@ ansible-playbook -i hosts.ini playbook.yml --private-key ~/.ssh/id_rsa
 # terraform init -upgrade
 # terraform apply -auto-approve
 
-# echo "Setup complete."
+echo "SETUP COMPLETE"
