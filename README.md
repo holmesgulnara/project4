@@ -1,6 +1,7 @@
 # project4
 # PROJECT 4 Prerequisites: <br>
-## 1 Install Jump Host (Bastion) Prerequisites: <br>
+## Create Jump Host (Bastion) <br>
+## Jump Host prerequisites: <br>
 ## Update and Upgrade (apt-get update && apt-get upgrade -y ) <br>
 ## Install Ansible (apt-get install -y ansible) <br>
 ## Install Terrafor and dependencies:  <br>
