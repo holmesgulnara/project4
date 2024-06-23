@@ -20,20 +20,6 @@ resource "digitalocean_droplet" "nodes" {
   ssh_keys = var.ssh_key_ids
 
   tags = ["rke"]
-
-  connection {
-    type     = "ssh"
-    user     = "root"
-    private_key = file(var.private_key_path)
-    host        = self.ipv4_address
-  }
-
-  provisioner "remote-exec" {
-    inline = [
-      "apt-get update && apt-get upgrade -y",
-      "apt-get install -y python3"
-    ]
-  }
 }
 
 output "droplet_ips" {
